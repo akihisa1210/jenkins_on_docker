@@ -42,11 +42,11 @@ pipeline {
             steps {
                 parallel (
                     phase1: {
-                        sh 'rm hoge'
+                        sh 'rm -rf hoge'
                         sh 'mkdir hoge'
                     },
                     phase2: {
-                        sh 'rm fuga'
+                        sh 'rm -rf fuga'
                         sh 'mkdir fuga'
                     }
                 )
